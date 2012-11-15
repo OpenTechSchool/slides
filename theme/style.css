@@ -109,6 +109,10 @@ h1, h2, h3 {
 	color: #888;
 }
 
+.slide .small {
+	font-size: 0.6em;
+}
+
 .slide b,
 .slide strong {
 	font-weight: bold;
@@ -230,8 +234,12 @@ h1, h2, h3 {
 }
 
 /* Cover */
-.slide.cover header {
-	color: #fff;
+.slide.cover header,
+.slide.shout a,
+.slide.shout a:visited,
+.slide.cover a,
+.slide.cover a:visited {
+	color: #29f;
 }
 
 .slide.cover section {
@@ -288,17 +296,15 @@ h1, h2, h3 {
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 	transform: translateY(-50%);
-}
-
-.slide.shout section,
-.slide.centered section,
-.slide.shout-louder section {
-	padding-top: 29%;
 	text-align: center;
 }
 
-.slide.centered {
-
+.slide.shout section > *:first-child,
+.slide.centered section > *:first-child,
+.slide.shout-louder section > *:first-child {
+	position: absolute;
+	top: 50%;
+	left: 0;
 }
 
 .slide.shout .tagline,
