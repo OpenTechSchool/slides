@@ -299,6 +299,20 @@ h1, h2, h3 {
 	text-align: center;
 }
 
+.slide.invert header.with-bg, 
+.slide.shout header.with-bg,
+.slide.shout-louder header.with-bg {
+	background-color: #286d99;
+	background-color: rgba(0,0,0,0.5);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+
+	padding: 1em 0;
+	border-top: solid 1px #666;
+	border-bottom: solid 1px #666;
+}
+
 .slide.shout section > *:first-child,
 .slide.centered section > *:first-child,
 .slide.shout-louder section > *:first-child {
