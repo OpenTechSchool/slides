@@ -448,6 +448,15 @@ h1, h2, h3 {
 	content: '';
 }
 
+.attribution {
+	position: absolute;
+	right: 30px;
+	bottom: 0.1em;
+	font-size: 0.5em;
+	color: white;
+	opacity: 0.6;
+}
+
 /* Medium sized viewports */
 @media all and (max-width:1060px) {
 
