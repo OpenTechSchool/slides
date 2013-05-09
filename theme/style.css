@@ -448,6 +448,21 @@ h1, h2, h3 {
 	content: '';
 }
 
+.bottomed {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #286d99;
+	background-color: rgba(0,0,0,0.5);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+
+	padding: 1em 0 0 2em;
+	border-top: solid 1px #666;
+}
+
 .attribution {
 	position: absolute;
 	right: 30px;
