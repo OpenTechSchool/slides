@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+  <title>OpenTechSchool</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1274, user-scalable=no">
+  <link rel="stylesheet" href="../../theme/style.css">
+  <script type="text/javascript" src="//use.typekit.net/ayv2sls.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>  
+</head>
+
+<body class="list">
+
+  <nav class="meta">
+    <div class="container">
+      <a class="logo" href="http://opentechschool.org">OpenTechSchool</a>
+    </div>
+  </nav>
+    
+    <header class="caption">
+      <h1>Let's talk about testing</h1>
+      <p>(and then actually do it)</p>
+    </header>
+
+    <section class="slides">
+
+    <div class="slide cover shout" id="cover"><div>
+      <section>
+        <header>
+          <h2>Let's talk about testing</h2>
+          <p class="tagline">(and then actually do it)</p>
+        </header>
+      </section>
+    </div></div>
+  
+    <div class="slide" id="what"><div>
+      <section>
+        <header>
+          <h2>Automated Testing - What</h2>
+        </header>
+        <ul>
+          <li>write programs that test your programs</li>
+          <li>no really, it makes sense (sometimes)</li>
+        </ul>
+      </section>
+    </div></div>
+  
+    <div class="slide" id="why"><div>
+      <section>
+        <header>
+          <h2>Automated Testing - Why</h2>
+        </header>
+        <ul>
+          <li>everyone writes bugs</li>
+          <li>manual testing becomes unfeasible quickly</li>
+          <li>having good tests helps when making changes</li>
+        </ul>
+      </section>
+    </div></div>
+  
+    <div class="slide" id="kinds_of_tests"><div>
+      <section>
+        <header>
+          <h2>Different Kinds of Automated Tests</h2>
+        </header>
+        <ul>
+          <li>unit testing</li>
+          <li>integration testing</li>
+          <li>system testing</li>
+          <li>acceptance testing</li>
+        </ul>
+      </section>
+    </div></div>
+  
+    <div class="slide" id="focus"><div>
+      <section>
+        <header>
+          <h2>However...</h2>
+        </header>
+        <p>Let's not go through each one and try to define them. <a href="https://en.wikipedia.org/wiki/Software_testing#Testing_levels">Wikipedia did that already.</a></p>
+        <p>Today we focus on unit testing.</p>
+      </section>
+    </div></div>
+  
+    <div class="slide" id="unit_testing"><div>
+      <section>
+        <header>
+          <h2>Unit Testing</h2>
+        </header>
+        <ul>
+          <li>very focused tests for a small unit of code</li>
+          <li>usually a function or a class</li>
+          <li>most languages have libraries for writing them</li>
+        </ul>
+      </section>
+    </div></div>
+
+    <div class="slide" id="structure"><div>
+      <section>
+        <header>
+          <h2>Structure of a Unit Test</h2>
+        </header>
+        <ol>
+          <li>arrange</li>
+          <li>act</li>
+          <li>assert</li>
+        </ol>
+      </section>
+    </div></div>
+    
+    <div class="slide" id="example"><div>
+      <section>
+        <header>
+          <h2>A Simple Example</h2>
+        </header>
+        <pre>
+          <code>
+def add(a, b):
+    return a + b
+
+def test_add():
+    expected = 3               # arrange
+    result = add(1, 2)         # act
+    assert result == expected  # assert
+          </code>
+        </pre>
+      </section>
+    </div></div>
+
+    <div class="slide" id="tdd"><div>
+      <section>
+        <header>
+          <h2>Test-Driven Development (TDD)</h2>
+        </header>
+        <ul>
+          <li>write the test <strong>before</strong> you write the code</li>
+          <li>write <strong>only</strong> the code required to make the test pass</li>
+          <li><a href="https://en.wikipedia.org/wiki/Refactoring">refactor</a> after each passing test (optional today)</li>
+        </ul>
+      </section>
+    </div></div>
+
+    <div class="slide" id="katas"><div>
+      <section>
+        <header>
+          <h2>Practising TDD with Code Katas</h2>
+        </header>
+        <ul>
+          <li>kata: Japanese for form/pattern</li>
+          <li>karate students repeat the same kata over and over to perfect their technique</li>
+        </ul>
+      </section>
+    </div></div>
+  
+      <div class="slide" id="code_kata"><div>
+      <section>
+        <header>
+          <h2>Code Kata</h2>
+        </header>
+        <ul>
+          <li>usually time-boxed to 15, 30, 60 minutes</li>
+          <li>the point is to practise, not to solve the problem</li>
+          <li><strong>do not try to finish it</strong></li>
+          <li>when the time is up, <strong>delete your code</strong> and start over</li>
+        </ul>
+      </section>
+    </div></div>
+
+    <div class="slide" id="hack"><div>
+      <section>
+        <header>
+          <h2>Time To Hack</h2>
+        </header>
+        <ul>
+          <li>two rounds á 15 minutes</li>
+          <li>pair programming in the second round</li>
+          <li>pick between
+            <ul>
+              <li>FizzBuzz</li>
+              <li>"String Calculator": <a href="http://osherove.com/tdd-kata-1/">http://osherove.com/tdd-kata-1/</a></li>
+            </ul>
+          </li>
+          <li><a href="https://github.com/haikoschol/kata_quickstart">https://github.com/haikoschol/kata_quickstart</a></li>
+        </ul>
+      </section>
+    </div></div>
+  
+    <!--
+      To hide progress bar from entire presentation
+      just remove “progress” element.
+      -->
+    <div class="progress"><div></div></div>
+
+  </section>
+  
+  <script src="../../lib/shower/scripts/script.js"></script>
+</body>
+</html>
