@@ -323,7 +323,9 @@ h1, h2, h3 {
 
 .slide.shout .tagline,
 .slide.shout-louder .tagline {
+	margin: 0 auto;
 	margin-top: 1.5em;
+	max-width: 80%;
 }
 
 .slide.shout h2,
@@ -603,4 +605,20 @@ h1, h2, h3 {
 
 .full .progress-off {
 	z-index: 1;
+}
+
+.thank-you {
+	padding-left: 100px;
+}
+
+.thank-you header {
+	margin-bottom: 15px;
+}
+
+.credits {
+ font-size: 11px;
+}
+
+.credits li {
+	display: inline;
 }
