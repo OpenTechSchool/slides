@@ -5,8 +5,17 @@
 Browser-based presentation template to be used for OTS presentations. 
 Built upon Shower by Vadim Makeev: https://github.com/pepelsbey/shower
 
-## Usage example
-http://opentechschool.github.com/slides/presentations/example/
+# Presentations
+
+- [OpenTechSchool Coaching Guide](http://opentechschool.github.com/slides/presentations/coaching)
+- [Example slides](http://opentechschool.github.com/slides/presentations/example)
+- [Let's Talk about testing](http://opentechschool.github.com/slides/presentations/lets-talk-about-testing)
+- http://opentechschool.github.com/slides/presentations/about-micro
+- http://opentechschool.github.com/slides/presentations/about
+- http://opentechschool.github.com/slides/presentations/about-two
+- http://opentechschool.github.com/slides/presentations/opencurriuculum-github-for-the-win
+- http://opentechschool.github.com/slides/presentations/the-state-of-tech-education
+- http://opentechschool.github.com/slides/presentations/2013-10-erlang-factory-berlin
 
 ---
 
